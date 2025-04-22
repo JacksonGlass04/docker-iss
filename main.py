@@ -42,8 +42,8 @@ def get_iss_location():
 
         # log output for visibility
         logger.info("Timestamp: " + dtime)
-        logger.info("Longitude: " + long)
-        logger.info("Latitude: " + lat)
+        logger.info("ISS Longitude: " + long)
+        logger.info("ISS Latitude: " + lat)
 
         # write output to mongo db
         write_to_mongo(dtime, long, lat)
